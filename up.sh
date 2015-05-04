@@ -11,6 +11,7 @@ for i in $(seq 1 10); do
     scp sysctl.conf       rr$i:/etc/sysctl.conf
     scp hosts             rr$i:/etc/hosts
     scp nginx.conf        rr$i:/etc/nginx
+    scp dstat.sh          r$i:bin/
 done
 exit
 
