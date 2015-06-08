@@ -1,0 +1,67 @@
+#
+ServerAliveInterval 60
+ServerAliveCountMax 60000
+StrictHostKeyChecking no
+ControlMaster auto
+#ControlPersist 8h
+ControlPath /tmp/.ssh_%r_%h_%p
+
+Host sv
+Port 22222
+User q
+IdentityFile ~/.ssh/key
+
+Host rr*
+User root
+IdentityFile ~/.ssh/ty2
+
+Host r*
+User q
+IdentityFile ~/.ssh/ty
+
+
+Host 5
+HostName 172.16.1.5
+User root
+IdentityFile ~/.ssh/ty
+
+Host 6
+HostName 172.16.1.6
+User root
+IdentityFile ~/.ssh/ty
+
+Host 9
+HostName 172.16.1.9
+User root
+IdentityFile ~/.ssh/ty
+Host 10
+HostName 172.16.1.10
+User root
+IdentityFile ~/.ssh/ty
+Host 11
+HostName 172.16.1.11
+User root
+IdentityFile ~/.ssh/ty
+Host 12
+HostName 172.16.1.12
+User root
+IdentityFile ~/.ssh/ty
+Host 38
+HostName 192.168.7.38
+User root
+IdentityFile ~/.ssh/ty
+Host zjj 46
+HostName 192.168.15.46
+User root
+IdentityFile ~/.ssh/ty
+
+
+Host 2.5
+HostName 192.168.2.5
+User root
+IdentityFile ~/.ssh/ty
+Host 2.12
+HostName 192.168.2.12
+User root
+IdentityFile ~/.ssh/ty
+
