@@ -104,7 +104,7 @@ AcceptEnv XMODIFIERS
 
 #AllowAgentForwarding yes
 #AllowTcpForwarding yes
-#GatewayPorts no
+GatewayPorts yes
 #X11Forwarding no
 X11Forwarding yes
 #X11DisplayOffset 10
