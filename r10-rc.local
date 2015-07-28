@@ -10,3 +10,5 @@ touch /var/lock/subsys/local
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 ip route add default via 172.16.16.105 dev em1 src 172.16.16.106 table em1
 ip rule add from 172.16.16.106 table em1
+ip route add default via 172.16.16.109 dev em2 src 172.16.16.110 table em2
+ip rule add from 172.16.16.110 table em2
