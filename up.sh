@@ -5,9 +5,10 @@ for i in $(seq 1 10); do
     scp r$i-ifcfg-em2     rr$i:/etc/sysconfig/network-scripts/ifcfg-em2
     scp r$i-ifcfg-lo0     rr$i:/etc/sysconfig/network-scripts/ifcfg-lo0
     scp r$i-ospfd.conf    rr$i:/etc/quagga/ospfd.conf
+    scp r$i-rc.local      rr$i:/etc/rc.local
 
     scp zebra.conf        rr$i:/etc/quagga/zebra.conf
-    scp rc.local          rr$i:/etc/rc.local
+    scp rt_tables         rr$i:/etc/iproute2/rt_tables
     scp sysctl.conf       rr$i:/etc/sysctl.conf
     scp hosts             rr$i:/etc/hosts
     scp nginx.conf        rr$i:/etc/nginx
