@@ -1,0 +1,3 @@
+DEVICE=em2
+MASTER=bond0
+SLAVE=yes
