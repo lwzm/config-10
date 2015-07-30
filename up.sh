@@ -1,8 +1,8 @@
 #!/bin/sh
 
 for i in $(seq 1 10); do
-    scp r$i-ifcfg-bond0   rr$i:/etc/sysconfig/network-scripts/ifcfg-bond0
-    scp r$i-ospfd.conf    rr$i:/etc/quagga/ospfd.conf
+    scp ifcfg-bond0/r$i   rr$i:/etc/sysconfig/network-scripts/ifcfg-bond0
+    scp ospfd.conf/r$i    rr$i:/etc/quagga/ospfd.conf
     scp ifcfg-em4/r$i     rr$i:/etc/sysconfig/network-scripts/ifcfg-em4
 
     scp ifcfg-em1         rr$i:/etc/sysconfig/network-scripts/ifcfg-em1
