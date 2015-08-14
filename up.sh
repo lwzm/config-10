@@ -20,6 +20,7 @@ for i in $(seq 1 10); do
     scp zebra.conf        bb$i:/etc/quagga/zebra.conf
     scp bonding.conf      bb$i:/etc/modprobe.d/bonding.conf
     scp sysctl.conf       bb$i:/etc/sysctl.conf
+    scp sshd_config       bb$i:/etc/ssh/sshd_config
     scp hosts             bb$i:/etc/hosts
     scp rc.local          bb$i:/etc/rc.local
     scp nginx.conf        bb$i:/etc/nginx
