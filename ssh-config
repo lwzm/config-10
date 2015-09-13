@@ -7,6 +7,7 @@ ControlMaster auto
 ControlPath /tmp/.ssh_%r_%h_%p
 
 Host sv
+HostName localhost
 Port 22222
 User q
 IdentityFile ~/.ssh/key
@@ -16,6 +17,23 @@ User root
 IdentityFile ~/.ssh/ty2
 
 Host r*
+User q
+IdentityFile ~/.ssh/ty
+
+Host t*
+User root
+IdentityFile ~/.ssh/ty2
+
+Host bb*
+User root
+IdentityFile ~/.ssh/ty2
+
+Host b*
+User q
+IdentityFile ~/.ssh/ty
+
+Host ali*
+Port 32815
 User q
 IdentityFile ~/.ssh/ty
 
@@ -60,8 +78,28 @@ Host 2.5
 HostName 192.168.2.5
 User root
 IdentityFile ~/.ssh/ty
+Host 2.9
+HostName 192.168.2.9
+User root
+IdentityFile ~/.ssh/ty
 Host 2.12
 HostName 192.168.2.12
 User root
 IdentityFile ~/.ssh/ty
 
+Host 192.168.5.*
+User root
+IdentityFile ~/.ssh/ty
+
+Host d?a d?b d?
+User root
+IdentityFile ~/.ssh/ty
+
+Host 119.44.223.*
+User lingya
+IdentityFile ~/.ssh/ty
+
+Host pay3
+HostName 119.44.223.3
+User q
+IdentityFile ~/.ssh/ty
