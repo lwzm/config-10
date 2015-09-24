@@ -35,6 +35,7 @@ exit
 for i in $(seq 1 6); do
     scp r1-r6-ifcfg-lo0   bb$i:/etc/sysconfig/network-scripts/ifcfg-lo0
     scp r1-r6.local.conf  bb$i:/etc/rsyslog.d/
+    scp iptables          bb$i:/etc/sysconfig/
 done
 scp r7.hub.conf bb7:/etc/rsyslog.d/hub.conf
 scp clean_log_tail.sh r7:log/
