@@ -1,0 +1,4 @@
+router ospf
+  ospf router-id 0.16.8.26
+  network 172.16.8.24/30 area 0
+  network 172.16.8.6/32 area 0
