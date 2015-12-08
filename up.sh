@@ -23,8 +23,9 @@ for i in $(seq 1 10); do
     scp sysctl.conf         bb$i:/etc/sysctl.conf
     scp sshd_config         bb$i:/etc/ssh/sshd_config
     scp hosts               bb$i:/etc/hosts
+    scp ntp.conf            bb$i:/etc/ntp.conf
     scp rc.local            bb$i:/etc/rc.local
-    scp nginx.conf          bb$i:/etc/nginx
+    scp nginx.conf          bb$i:/etc/nginx/nginx.conf
     scp nginx-default.conf  bb$i:/etc/nginx/conf.d/default.conf
     scp nginx-proxy.conf    bb$i:/etc/nginx/conf.d/proxy.conf
     scp dstat.sh            b$i:bin/
