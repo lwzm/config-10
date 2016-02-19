@@ -21,7 +21,7 @@ for i in $(seq 1 10); do
     scp zebra.conf          bb$i:/etc/quagga/zebra.conf
     scp bonding.conf        bb$i:/etc/modprobe.d/bonding.conf
     scp sysctl.conf         bb$i:/etc/sysctl.conf
-    scp limits.conf         bb$i:/etc//etc/security/limits.conf
+    scp limits.conf         bb$i:/etc/security/limits.conf
     scp sshd_config         bb$i:/etc/ssh/sshd_config
     scp hosts               bb$i:/etc/hosts
     scp ntp.conf            bb$i:/etc/ntp.conf
